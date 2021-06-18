@@ -1,0 +1,83 @@
+/* =========== Base Style =========== */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: -8px;
+}
+main {
+    max-width: 1000px;
+    margin: 50px;
+}
+
+header, footer {
+    background-color:whitesmoke;
+    padding-top: 25px;
+    padding-bottom: 75px;
+}
+h2 {
+    
+    font-weight: 400;
+}
+p {
+    color: #808080;
+    padding: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* =========== ID Styles =========== */
+
+#top {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+#portfolio {
+    margin: 100px;
+}
+
+/* =========== Class Styles =========== */
+
+ul .nav-btn {
+    background-color: white;
+    list-style: none;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.nav-links, .nav-btn {
+    padding: 30px;
+    
+}
+
+.hero-img {
+    max-width: 60%;
+}
+
+.footer-btm {
+    display: inline-flex;
+}  
+/* =========== Flexbox =========== */
+
+
+/* =========== Media Queries =========== */
+
+@media (min-width: 768px) {
+    
+
+
+}
+
+@media (min-width: 1024px) {
+
+
+
+
+}
