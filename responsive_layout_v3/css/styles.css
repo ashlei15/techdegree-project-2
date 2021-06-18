@@ -1,83 +1,164 @@
-/* =========== Base Style =========== */
-* {
+  * {
     box-sizing: border-box;
-}
-body {
+  }
+  body {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
     text-align: center;
-    margin: -8px;
-}
-main {
-    max-width: 1000px;
-    margin: 50px;
-}
-
-header, footer {
+  }
+  header, footer {
     background-color:whitesmoke;
     padding-top: 25px;
-    padding-bottom: 75px;
-}
-h2 {
-    
-    font-weight: 400;
-}
-p {
+  }
+  footer {
+    padding-top: 50px;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
+  
+  p {
     color: #808080;
-    padding: 50px;
-}
-
-img {
+    padding: 25px;
+    line-height: 1.5em;
+  }
+  
+  img {
     width: 100%;
-}
-
-
-/* =========== ID Styles =========== */
-
-#top {
-    font-size: 2.5em;
-    font-weight: bold;
-}
-#portfolio {
-    margin: 100px;
-}
-
-/* =========== Class Styles =========== */
-
-ul .nav-btn {
-    background-color: white;
+  }
+  a {
+   text-decoration: none; 
+   color: black;
+   font-weight: bold;
+  }
+   
+  /* ----- class styles ----- */
+  .hero {
+    padding-bottom: 2em;
+  }  
+  ul {
     list-style: none;
-    display: block;
-    margin-bottom: 20px;
-    font-size: 40px;
-}
-
-.nav-links, .nav-btn {
-    padding: 30px;
+  }
+  ul,
+  h1 {
+    font-size: 16px;
+  }
+  
+  .main-nav {
+    padding: 0px;
+    margin-bottom: 40px;
+  }
+  .nav-btn {
+    background-color: white;
+    margin: 10px 15px 10px 15px;
+    padding: 20px;
+  }
+  .hero-img {
+    max-width: 70%;
+  }
+  
+  .ftr-item-1{
+    order: 3;
+  }
+  .ftr-item-2,
+  .ftr-item-3,
+  .ftr-item-4 {
+    visibility: hidden;
+  }
+  
+  /* =========== ID Styles =========== */
+  
+  #top {
+    font-weight: bold;
+    font-size: 2em;
+  }
+  #portfolio {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* =========== Flexbox =========== */
+  .ftr-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  /* =========== Media Queries =========== */
+  @media screen and (min-width: 768px) {
+    .main-header,
+    .main-nav {
+      display: flex;
+    }
+  
+    .main-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-nav {
+      margin-top: -5px;
+    }
+  
+    .nav-btn {
+      background-color: transparent;
+    }
+    .hero {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    .hero-p {
+      text-align: left;
+      font-size: 1.15em;
+      margin-top: 0px;
+      padding-top: 0px;
+      flex-grow: 4;
+    }
+    .hero-img {
+      padding-right: 16px;
+      padding-bottom: 16px;
+    }
+    .flexbox-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .flexbox-item {
+      flex-basis: 47%;
+    }
+    .ftr-flex-container {
+      display: flex;
+      justify-content: space-between;
+      flex-basis: 35%;
+    }
     
-}
-
-.hero-img {
-    max-width: 60%;
-}
-
-.footer-btm {
-    display: inline-flex;
-}  
-/* =========== Flexbox =========== */
-
-
-/* =========== Media Queries =========== */
-
-@media (min-width: 768px) {
+    .ftr-item-2,
+    .ftr-item-3,
+    .ftr-item-4 {
+    visibility: visible;
+    }
+    .ftr-item-1{
+    display: none;
+    }
+    #portfolio-anchor {
+      margin: 50px 0px 50px 0px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .main-header,
+    .main-nav {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 0px;
+    }
+  
+    .main-header {
+      margin: 0px 35px 30px 70px;
+    }
     
-
-
-}
-
-@media (min-width: 1024px) {
-
-
-
-
-}
+    .flexbox-item {
+      flex-basis: 30%;
+    }
+  }
