@@ -43,11 +43,11 @@
   h1 {
     font-size: 16px;
   }
-  
-  .main-nav {
+    .main-nav {
     padding: 0px;
     margin-bottom: 40px;
   }
+
   .nav-btn {
     background-color: white;
     margin: 10px 15px 10px 15px;
@@ -153,7 +153,15 @@
       justify-content: space-between;
       margin-bottom: 0px;
     }
-  
+    .nav-title {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .header-container {
+      width: 100%;
+      display: inline-flex;
+      justify-content:space-between;
+    }
     .main-header {
       margin: 0px 35px 30px 70px;
     }
